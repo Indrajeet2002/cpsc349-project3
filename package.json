@@ -1,0 +1,19 @@
+{
+  "name": "cpsc349-project3",
+  "version": "1.0.0",
+  "description": "Group 7 for Project 3 Making A Game",
+  "scripts": {
+    "start": "browser-sync start --server --startPath /index.html --files '.html,.css,*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Indrajeet2002/cpsc349-project3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Indrajeet2002/cpsc349-project3/issues"
+  },
+  "homepage": "https://github.com/Indrajeet2002/cpsc349-project3#readme"
+}
