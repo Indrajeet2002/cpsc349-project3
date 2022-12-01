@@ -6,6 +6,7 @@ const playerWins = document.querySelector("#playerWinCount");
 const compWins = document.querySelector("#computerWinCount");
 const comptext = document.querySelector("#computerChoice");
 const playertext = document.querySelector("#playerChoice");
+
 let playerWinCount = 0;
 let compWinCount = 0;
 
@@ -71,4 +72,14 @@ function playRound(playerChoice, computerChoice) {
     compWins.textContent = compWinCount;
     currentWinner.textContent = "Computer Wins!";
   }
+
+  // Save Player win count
+  localStorage.setItem('playerWins', playerWinCount);
+
+  localStorage.setItem("computerWins", compWinCount);
 }
+
+// Load Player/Computer win count
+playerWinCount = JSON.parse(localStorage.getItem('playerWins'));
+compWinCount = JSON.parse(localStorage.getItem("computerWins"));
+

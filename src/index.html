@@ -19,10 +19,16 @@
     <button class="button" id="scissors">Scissors</button>
   </div>
   <div class="endResults">
-    <p><span id ="computerChoice"></span></p>
-    <p><span id ="playerChoice"></span></p>
-    <p>Player Wins: <span id="playerWinCount">0</span></p>
-    <p>Computer Wins: <span id="computerWinCount">0</span></p>
+      <p><span id ="computerChoice"></span></p>
+      <p><span id ="playerChoice"></span></p>
+      <p>Player Wins: <span id="playerWinCount"></p>
+      <script>
+        document.getElementById("playerWinCount").innerHTML = JSON.parse(localStorage.getItem('playerWins'))
+      </script>
+      <p>Computer Wins: <span id="computerWinCount"></span></p>
+      <script>
+        document.getElementById("computerWinCount").innerHTML = JSON.parse(localStorage.getItem("computerWins"))
+      </script>
   </div>
   <script src="game.js"></script>
 </body>

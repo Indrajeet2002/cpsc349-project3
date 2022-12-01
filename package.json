@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Group 7 for Project 3 Making A Game",
   "scripts": {
-    "start": "browser-sync start --server --startPath /index.html --files '.html,.css,*.js'",
+    "tailwind": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "dev": "browser-sync start --server --startPath ./src/index.html --files '.html,.css,*.js'",
+    "start": "npm-run-all --parallel dev tailwind",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/Indrajeet2002/cpsc349-project3#readme",
   "devDependencies": {
+    "npm-run-all": "^4.1.5",
     "tailwindcss": "^3.2.4"
   }
 }
