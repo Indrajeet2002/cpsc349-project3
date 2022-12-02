@@ -11,11 +11,25 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 80px;
 }
 
 .h1{
-    font-size: 250%;     /* Here */
-    font-weight: normal;
+    font-size: 350%;     /* Here */
+    font-weight: bold;
+    text-align: center;
+}
+
+.h2{
+    font-size: 150%;
+    text-align: center;
+}
+
+.initial{
+    font-size: 120%;
+    text-align: center;
+}
+
+.about{
     text-align: center;
 }
