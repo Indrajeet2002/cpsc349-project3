@@ -6,9 +6,22 @@ const playerWins = document.querySelector("#playerWinCount");
 const compWins = document.querySelector("#computerWinCount");
 const comptext = document.querySelector("#computerChoice");
 const playertext = document.querySelector("#playerChoice");
+var coll = document.getElementsByClassName("#collapsible");
+var i;
 
 let playerWinCount = 0;
 let compWinCount = 0;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });}
 
 rock.addEventListener('click', function () {
   let computerChoice = ComputerChoice();
