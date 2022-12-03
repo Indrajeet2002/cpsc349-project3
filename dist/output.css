@@ -1910,7 +1910,8 @@ html {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 80px;
+  font-size: 50px;
+  margin: 0 auto;
 }
 
 .h1{
@@ -1935,8 +1936,10 @@ html {
 }
 
 .footer {
-  background-color: grey;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
   text-align: center;
-  padding: 3px;
-  color: black;
 }
