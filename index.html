@@ -10,6 +10,11 @@
 </head>
 
 <body>
+  <nav class="topNav">
+    <a>Group 7</a>
+    <a href="/cpsc349-project3/index.html">Home</a>
+  </nav>
+    
     <h1 class="h1">Welcome to Rock, Paper, Scissors</h1>
     <h2 class="h2">You the player can challenge the computer in a friendly match!</h2>
     <h2 class="h2">Enjoy!</h2>
@@ -17,6 +22,7 @@
   <div class="start">
     <p class="initial"><span id="currentWinner">Press buttons below to play.</span></p>
   </div>
+  &nbsp
   <div class="buttons">
     <button class="button" id="rock">Rock</button>
     &nbsp
@@ -25,18 +31,19 @@
     &nbsp
     <button class="button" id="scissors">Scissors</button>
   </div>
-  <div class="endResults"> 
-      <p><span id ="computerChoice"></span></p>
-      <p><span id ="playerChoice"></span></p>
-      <p>Player Wins: <span id="playerWinCount"></p>
-      <script>
-        document.getElementById("playerWinCount").innerHTML = JSON.parse(localStorage.getItem('playerWins'))
-      </script>
-      <p>Computer Wins: <span id="computerWinCount"></span></p>
-      <script>
-        document.getElementById("computerWinCount").innerHTML = JSON.parse(localStorage.getItem("computerWins"))
-      </script>
+  &nbsp
+  <div class="choice">
+    <p class="label"><span id ="playerChoice"></span></p>
+    &nbsp  
+    <p class="label"><span id ="computerChoice"></span></p>
   </div>
+  &nbsp
+  <div class="endResults">
+    <p class="label">Player Wins: &nbsp <span id="playerWinCount"></p>
+    &nbsp
+    <p class="label">Computer Wins: &nbsp <span id="computerWinCount"></span></p>  
+  </div>
+  
   <script src="/cpsc349-project3/src/game.js"></script>
 </body>
 
