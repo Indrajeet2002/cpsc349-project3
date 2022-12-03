@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Group 7 for Project 3 Making A Game",
   "scripts": {
-    "tailwind": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "tailwind": "tailwindcss -i ./docs/input.css -o ./src/output.css --watch",
     "dev": "browser-sync start --server --startPath ./docs/index.html --files '.html,.css,*.js'",
     "start": "npm-run-all --parallel dev tailwind",
     "test": "echo \"Error: no test specified\" && exit 1"
